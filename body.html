@@ -6,27 +6,45 @@
         <Link rel="stylesheet" href="body.css">
             <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css">
     </head>
     <body>
             <section class="header">
                 <nav>
                     <a href="body.html"><img src="images/logo.png"></a>
-                    <div class="nav-links">
+                    <div class="nav-links" id="navlinks">
+                        <i class="fa fa-times" onclick="hidemenu()"></i>
                         <ul>
                             <li><a href="">home</a></li>
-                            <li><a href="">about</a></li></li>
-                            <li><a href="">course</a></li></li>
-                            <li><a href="">blog</a></li></li>
-                            <li><a href="">contact</a></li></li>
+                            <li><a href="">about</a></li>
+                            <li><a href="">course</a></li>
+                            <li><a href="">blog</a></li>
+                            <li><a href="">contact</a><li>
                         </ul>
                     </div>
+                    <i class="fa fa-bars" onclick="showmenu()"></i>
                 </nav>
                     <div class="text-box">
                         <h1>Worlds Biggest Brand</h1>
                         <p>A smooth ride with an endless amount of comfort<br> the Nike React Infinity Run Flyknit 3 is the first step towards your best run yet</p>
                         <a href=""class="hero-btn">visit us to know more</a>
                     </div>
-            </section>        
+            </section>
+<!-----------------course--------------------------------->
+<section class=""course">
+    <h1>courses we offer</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+</section>
+<!-----------------javascript for toggle menu------------->      
+            <script>
+                var navlinks = document.getElementById("navlinks")
+                function showmenu(){
+                    navlinks.style.right= "0"
+                }
+                function hidemenu(){
+                    navlinks.style.right= "-200px"
+                }
+            </script> 
     </body>
 </html>
