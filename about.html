@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=devic-width, initial scale=1.0">
+        <title> my first website </title>
+        <Link rel="stylesheet" href="body.css">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css">
+    </head>
+    <body>
+<!-----------------header---------------------------->
+
+            <section class="sub-header">
+                <nav>
+                    <a href="body.html"><img class="logo" src="images/logo.png"></a>
+                    <div class="nav-links" id="navlinks">
+                        <i class="fa fa-times" onclick="hidemenu()"></i>
+                        <ul>
+                            <li><a href="body.html">home</a></li>
+                            <li><a href="about.html">about</a></li>
+                            <li><a href="">job</a></li>
+                            <li><a href="">blog</a></li>
+                            <li><a href="">contact</a><li>
+                        </ul>
+                    </div>
+                     <i class="fa fa-bars" onclick="showmenu()"></i>
+                </nav>
+                <h1>About Us </h1>
+            </section>
+<!-----------------header---------------------------->
+<!-----------------about us content---------------------------->
+<section class="about-us">
+    <div class="row">
+        <div class="about-col">
+            <h1>We Are The Worlds Largest Shoe Brand</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam consequatur, aspernatur debitis cum quidem,
+                itaque culpa, ipsa vitae ex pariatur temporibus laudantium. Totam ratione modi accusamus 
+                ipsa enim quasi molestias.</p>
+                <a href="" class="hero-btn RED-btn">EXPLORE NOW </a>
+        </div>
+        <div class="about-col">
+            <img src="images/about.png">        
+        </div>
+    </div>
+</section>
+
+<!-----------------fotter---------------------------->
+<section class="footer">
+    <h4>about us</h4>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia voluptatum earum recusandae 
+        odio architecto, debitis voluptates alias delectus rem animi,<br> in quibusdam corporis quam possimus 
+        velit eum repudiandae, omnis fugit?</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <p>made with<i class="fa fa-heart-o"></i> by easy tutorials</p>
+c    </section>
+<!-----------------fotter---------------------------->
+<!-----------------javascript for toggle menu---------------->      
+            <script>
+                var navlinks = document.getElementById("navlinks")
+                function showmenu(){
+                    navlinks.style.right= "0"
+                }
+                function hidemenu(){
+                    navlinks.style.right= "-200px"
+                }
+            </script> 
+    </body>
+</html> 
